@@ -19,7 +19,14 @@ import {
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
-const Links = ["Dashboard", "Projects", "Team"];
+const Links = [
+  "Home",
+  "About Us",
+  "Services",
+  "Testimony",
+  "Gallery",
+  "Contact Us",
+];
 
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Link
@@ -56,7 +63,7 @@ export default function Header() {
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
               </Button>
 
-              <Menu>
+              {/* <Menu>
                 <MenuButton
                   as={Button}
                   rounded={"full"}
@@ -87,7 +94,7 @@ export default function Header() {
                   <MenuItem>Account Settings</MenuItem>
                   <MenuItem>Logout</MenuItem>
                 </MenuList>
-              </Menu>
+              </Menu> */}
             </Stack>
           </Flex>
         </Flex>

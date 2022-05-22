@@ -12,6 +12,7 @@ const Landing = () => {
     <Box>
       <Intro />
       <BasicStatistics />
+      <WhoWeAre />
       <Services />
       <Ourteam />
       <Works />
